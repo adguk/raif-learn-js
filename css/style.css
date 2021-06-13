@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Styles that are used in header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80px;
+
+    padding: 0 32px;
+
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.raiffeisen-logo {
+    height: 32px;
+}
+
+.user-name {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #2B2D33;
+}
+
+.user-profile-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 210px;
+    height: 32px;
+}
+
+/* Styles that are used in banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background: #CFF1E9;
+    background-image: url(../images/raketa.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+
+    height: 300px;
+
+    margin: 48px 205px 56px 205px;
+    padding: 40px 48px;
+
+    box-sizing: border-box
+}
+
+.next-event-label {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #2B2D33;
+}
+
+.next-event-title {
+    font-family: Navigo, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+
+    color: #2B2D33;
+}
+
+.next-event-date-and-place {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #2B2D33;
+}
+
+.sign-up-for-event-button {
+    background: #2B2D33;
+    border-radius: 8px;
+
+    padding: 10px 24px;
+
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+}
+
+/* Styles that are used in events table */
+.events {
+    margin: 0px 205px;
+}
+
+.events-label {
+    font-family: Navigo, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #2B2D33;
+
+    margin: 0px 0px 32px 0px;
+}
+
+.event-organizers {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.category {
+    background: #F4F4F4;
+    border-radius: 24px;
+    margin: 0 8px 0 0;
+    padding: 7px 20px;
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2B2D33;
+}
+
+.category.active {
+    background: #2B2D33;
+    color: #FFFFFF;
+}
+
+.category.active.event-organizer {
+    margin: 0 8px 0 0;
+    padding: 5px 16px;
+}
+
+.category.event-organizer {
+    padding: 5px 16px;
+}
+
+.events-table {
+    margin-top: 40px;
+}
+
+.events-table td {
+    vertical-align: top;
+    padding: 12px 8px;
+}
+
+.event-date {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #2B2D33;
+}
+
+.event-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.event-title {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #2B2D33;
+}
+
+.event-description {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #AAABAD;
+}
+
+.hearts-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.heart-label {
+    margin-left: 5px;
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+}
+
+.speakers {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #00A5BC;
+}
+
+.register-available {
+    border: 2px solid #D5D5D6;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #2B2D33;
+
+    padding: 5px 16px;
+}
+
+.register-unavailable {
+    border: 2px solid #E9EAEA;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: rgba(43, 45, 51, 0.24);
+
+    padding: 5px 16px;
+
+    white-space: nowrap;
+}
+
+/* Styles that are used in popup */
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(43, 45, 51, 0.24);
+}
+
+.popup-container {
+    position: relative;
+    top: 112px;
+    left: calc(50% - 300px);
+    width: 600px;
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.popup-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-title-text {
+    font-family: Navigo, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #2B2D33;
+}
+
+.popup-close-button {
+    border: 0;
+    background-color: #FFFFFF;
+    color: #AAABAD;
+}
+
+.popup-details {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #808185;
+    margin-top: 12px;
+}
+
+.popup-event-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #F4F4F4;
+    border-radius: 24px;
+    margin-top: 24px;
+    padding: 24px;
+}
+
+.popup-event-title {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2B2D33;
+}
+
+.popup-event-description {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #AAABAD;
+    margin-top: 8px;
+}
+
+.popup-location-types {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 24px;
+}
+
+.popup-login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 24px;
+}
+
+.popup-form-label {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #808185;
+    margin: 4px 0;
+}
+
+.popup-form-input {
+    border: 1px solid #D5D5D6;
+    border-radius: 8px;
+    background: #FFFFFF;
+    margin: 4px 0;
+    padding: 7px 12px;
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #AAABAD;
+    width: 536px;
+    height: 36px;
+}
+
+.popup-form-input::placeholder {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #AAABAD;
+}
+
+.popup-comment-container {
+    margin-top: 24px;
+}
+
+textarea.popup-form-input {
+    width: 536px;
+    height: 80px;
+    resize: none;
+}
+
+.popup-control-buttons {
+    margin-top: 24px;
+    display: flex;
+}
+
+.popup-submit-button {
+    margin-right: 16px;
+    padding: 7px 20px;
+    border: 0;
+    background: #FEE600;
+    border-radius: 8px;
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2B2D33;
+}
+
+.popup-cancel-button {
+    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2B2D33;
+    border: 0;
+    background-color: #FFFFFF;
+}
