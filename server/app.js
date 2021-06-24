@@ -3,10 +3,12 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const cors = require('cors');
 
 const dataRouter = require('./routes/data');
 
 const app = express();
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -30,6 +32,10 @@ app.use(function(err, req, res, next) {
 
   res.status(err.status || 500);
   res.render('error');
+});
+
+app.listen(8080, function () {
+  console.log('CORS-enabled web server listening on port 80')
 });
 
 module.exports = app;
