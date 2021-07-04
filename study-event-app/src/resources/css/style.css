@@ -225,7 +225,8 @@
     color: #00A5BC;
 }
 
-.register-available {
+.register-button {
+    background-color: rgb(255, 255, 255);
     border: 2px solid #D5D5D6;
     box-sizing: border-box;
     border-radius: 8px;
@@ -239,39 +240,24 @@
     color: #2B2D33;
 
     padding: 5px 16px;
-}
-
-.register-unavailable {
-    border: 2px solid #E9EAEA;
-    box-sizing: border-box;
-    border-radius: 8px;
-
-    font-family: ALS Hauss, Trebuchet MS, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
-
-    color: rgba(43, 45, 51, 0.24);
-
-    padding: 5px 16px;
 
     white-space: nowrap;
 }
 
+.register-unavailable {
+    border: 2px solid #E9EAEA;
+
+    color: rgba(43, 45, 51, 0.24);
+}
+
 /* Styles that are used in popup */
 .popup {
-    display: none;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background: rgba(43, 45, 51, 0.24);
-}
-
-.popup-visible {
-    display: block;
 }
 
 .popup-container {
